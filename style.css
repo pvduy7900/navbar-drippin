@@ -1,0 +1,126 @@
+:root {
+    box-sizing: border-box;
+  }
+  *,
+  ::before,
+  ::after {
+    /* box-sizing: inherit; */
+  }
+  
+  /* navbar */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .logo-and-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo {
+    height: 35px;
+  }
+  .home-link {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .home:hover {
+    text-decoration: none;
+  }
+  .signbtn {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  .signbtn li{
+    margin-right: 5px;
+  }
+  .signup {
+    /* button signup here */
+  }
+  .home-link li{
+    margin-right: 5px;
+  }
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin:5px;
+  }
+  
+  @media screen and (max-width:1024px){
+    .nav-right{
+    }
+  }
+  
+  @media screen and (max-width:768px){
+    body{
+      overflow-x: hidden;
+    }
+    .signbtn{
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+       transform: translate(100%);
+       transition: transform 0.5s ease-in;
+    }
+    .signbtn li {
+      opacity: 0;
+    }
+    .burger {
+      display: block;
+    }
+  }
+  .nav-active{
+    transform: translate(0%);
+  }
+  
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translate(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translate(0px);
+    }
+  }
+  
+  
+  
+  
+  
+  body {
+    font: 1em/1.5 "Open Sans", Arial, Sans-serif;
+    margin: 0;
+    /* background: #e9e9e9; */
+  }
+  
